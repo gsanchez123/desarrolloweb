@@ -1,0 +1,159 @@
+/* --- Variables de color --- */
+:root {
+    --color-primario: #0d6efd;
+    --color-secundario: #6c757d;
+    --color-texto: #212529;
+    --color-fondo: #f8f9fa;
+    --color-hover: #0056b3;
+}
+
+/* --- Estilos Generales --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h5 {
+    font-weight: bold;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- Header --- */
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: url('../img/banner.jpg') no-repeat center center/cover;
+    height: 70vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* --- Productos --- */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-hover);
+}
+
+.btn-outline-secondary {
+    border-color: var(--color-secundario);
+    color: var(--color-secundario);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--color-secundario);
+    color: #fff;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--color-texto);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--color-primario);
+}
+
+/* --- Formulario de contacto --- */
+form label {
+    font-weight: 500;
+}
+
+form input,
+form textarea {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--color-primario);
+    outline: none;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
