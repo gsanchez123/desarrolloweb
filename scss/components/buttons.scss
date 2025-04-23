@@ -1,0 +1,16 @@
+// scss/components/_buttons.scss
+@use '../abstracts/variables';
+@use 'sass:color';
+
+.btn {
+    background-color: variables.$color-secundario;
+    color: variables.$color-blanco;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: color.adjust(variables.$color-secundario, $lightness: -10%);
+    }
+}

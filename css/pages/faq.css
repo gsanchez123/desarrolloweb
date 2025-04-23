@@ -1,0 +1,14 @@
+.faq {
+  padding: 60px 20px;
+}
+.faq .pregunta {
+  margin-bottom: 20px;
+}
+.faq .pregunta h4 {
+  font-weight: bold;
+}
+.faq .pregunta p {
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=faq.css.map */

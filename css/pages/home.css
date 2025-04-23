@@ -1,0 +1,25 @@
+.hero {
+  background: url("../img/banner.jpg") no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

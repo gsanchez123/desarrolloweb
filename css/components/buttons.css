@@ -1,0 +1,13 @@
+.btn {
+  background-color: #ff3f34;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgb(255, 14.763546798, 1);
+}
+
+/*# sourceMappingURL=buttons.css.map */

@@ -1,0 +1,12 @@
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=cards.css.map */
