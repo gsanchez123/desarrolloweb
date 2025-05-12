@@ -14,11 +14,43 @@ body {
 header {
   background-color: #1f1f1f;
 }
-header nav a {
-  color: white;
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-header nav a:hover {
+header .nav-link {
+  color: white;
+  font-weight: 500;
+}
+header .nav-link:hover {
   color: #ff3f34;
+}
+header .menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+header .menu-icon span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+header #menu-toggle:checked ~ .nav-menu {
+  display: block;
+}
+header .nav-menu {
+  display: none;
+}
+@media (min-width: 992px) {
+  header .nav-menu {
+    display: flex !important;
+    align-items: center;
+  }
+}
+header .nav-menu ul {
+  padding-left: 0;
 }
 
 footer {
@@ -43,6 +75,52 @@ footer .social-icons a:hover {
 @media (max-width: 768px) {
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-icon span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #343a40;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 10;
+}
+.nav-menu a {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+#menu-toggle:checked ~ .nav-menu {
+  display: flex;
+}
+@media (min-width: 992px) {
+  .nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
+  }
+  .nav-menu a {
+    color: white;
   }
 }
 

@@ -12,12 +12,21 @@
 
 <body>
 
-    <!-- Header -->
     <header class="bg-dark text-white p-3 sticky-top">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="mb-0">UrbanStyle</h1>
-            <nav>
-                <ul class="nav">
+
+            <!-- Menú hamburguesa -->
+            <input type="checkbox" id="menu-toggle" class="d-none">
+            <label for="menu-toggle" class="menu-icon d-lg-none" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <ul class="nav flex-column flex-lg-row gap-2 gap-lg-0">
                     <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./nosotros.html">Nosotros</a></li>
@@ -28,6 +37,7 @@
         </div>
     </header>
 
+
     <!-- Sobre Nosotros -->
     <main class="container my-5">
         <h2 class="text-center mb-4">Sobre Nosotros</h2>
@@ -36,8 +46,11 @@
                 <img src="../img/equipodetrabajo.webp" alt="Equipo UrbanStyle" class="img-fluid rounded">
             </div>
             <div class="col-md-6">
-                <p>En <strong>UrbanStyle</strong> nos apasiona la moda urbana. Desde nuestros inicios, buscamos fusionar lo moderno, lo cómodo y lo auténtico en cada prenda. Nuestro objetivo es que cada cliente se sienta representado y libre al usar nuestros productos.</p>
-                <p>Trabajamos con materiales de calidad y con diseños que marcan tendencia. Estamos comprometidos con brindar una excelente experiencia, tanto en la tienda online como en nuestras redes sociales.</p>
+                <p>En <strong>UrbanStyle</strong> nos apasiona la moda urbana. Desde nuestros inicios, buscamos fusionar
+                    lo moderno, lo cómodo y lo auténtico en cada prenda. Nuestro objetivo es que cada cliente se sienta
+                    representado y libre al usar nuestros productos.</p>
+                <p>Trabajamos con materiales de calidad y con diseños que marcan tendencia. Estamos comprometidos con
+                    brindar una excelente experiencia, tanto en la tienda online como en nuestras redes sociales.</p>
                 <p>¡Gracias por ser parte de nuestra comunidad!</p>
             </div>
         </div>
