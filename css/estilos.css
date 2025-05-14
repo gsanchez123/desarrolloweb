@@ -14,43 +14,59 @@ body {
 header {
   background-color: #1f1f1f;
 }
-header h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-header .nav-link {
+header nav a {
   color: white;
-  font-weight: 500;
 }
-header .nav-link:hover {
+header nav a:hover {
   color: #ff3f34;
 }
 header .menu-icon {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+  gap: 5px;
+  padding: 10px;
 }
 header .menu-icon span {
-  height: 3px;
-  width: 25px;
-  background: white;
-  margin: 4px 0;
-  transition: all 0.3s ease;
-}
-header #menu-toggle:checked ~ .nav-menu {
   display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+header #menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+header #menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+header #menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 header .nav-menu {
   display: none;
 }
 @media (min-width: 992px) {
   header .nav-menu {
-    display: flex !important;
-    align-items: center;
+    display: block !important;
   }
 }
-header .nav-menu ul {
-  padding-left: 0;
+header #menu-toggle:checked ~ .nav-menu {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  z-index: 999;
+}
+header #menu-toggle:checked ~ .nav-menu ul {
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+header #menu-toggle:checked ~ .nav-menu ul li {
+  margin: 10px 0;
 }
 
 footer {
@@ -137,16 +153,30 @@ footer .social-icons a:hover {
 }
 
 .card {
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease-out forwards;
 }
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 .card .card-img-top {
   height: 250px;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.05);
 }
 
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero {
   background: url("../img/banner.jpg") no-repeat center center/cover;
   padding: 100px 20px;

@@ -1,12 +1,29 @@
 .card {
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease-out forwards;
 
     &:hover {
-        transform: scale(1.03);
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
     .card-img-top {
         height: 250px;
         object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    &:hover .card-img-top {
+        transform: scale(1.05);
+    }
+}
+
+// Animación personalizada (si no usás AOS o Animate.css)
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

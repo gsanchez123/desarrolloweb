@@ -4,9 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Conocé la historia de UrbanStyle, nuestro compromiso con la moda urbana y nuestra comunidad.">
+    <meta name="author" content="UrbanStyle">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Language" content="es">
+
     <title>UrbanStyle - Sobre Nosotros</title>
+
+    <!-- Estilos compilados desde Sass -->
     <link rel="stylesheet" href="../css/styles.css" />
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
@@ -18,14 +30,14 @@
 
             <!-- Menú hamburguesa -->
             <input type="checkbox" id="menu-toggle" class="d-none">
-            <label for="menu-toggle" class="menu-icon d-lg-none" aria-label="Abrir menú de navegación">
+            <label for="menu-toggle" class="menu-icon d-lg-none" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
             <!-- Menú de navegación -->
-            <nav class="nav-menu">
+            <nav class="nav-menu" role="navigation" aria-label="Navegación principal">
                 <ul class="nav flex-column flex-lg-row gap-2 gap-lg-0">
                     <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="./productos.html">Productos</a></li>
@@ -37,26 +49,27 @@
         </div>
     </header>
 
-
-    <!-- Sobre Nosotros -->
     <main class="container my-5">
         <h2 class="text-center mb-4">Sobre Nosotros</h2>
-        <div class="row align-items-center">
+        <section class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0">
-                <img src="../img/equipodetrabajo.webp" alt="Equipo UrbanStyle" class="img-fluid rounded">
+                <img src="../img/equipodetrabajo.webp" alt="Nuestro equipo de trabajo UrbanStyle"
+                    class="img-fluid rounded">
             </div>
             <div class="col-md-6">
                 <p>En <strong>UrbanStyle</strong> nos apasiona la moda urbana. Desde nuestros inicios, buscamos fusionar
-                    lo moderno, lo cómodo y lo auténtico en cada prenda. Nuestro objetivo es que cada cliente se sienta
-                    representado y libre al usar nuestros productos.</p>
+                    lo moderno,
+                    lo cómodo y lo auténtico en cada prenda. Nuestro objetivo es que cada cliente se sienta representado
+                    y libre al
+                    usar nuestros productos.</p>
                 <p>Trabajamos con materiales de calidad y con diseños que marcan tendencia. Estamos comprometidos con
-                    brindar una excelente experiencia, tanto en la tienda online como en nuestras redes sociales.</p>
+                    brindar una
+                    excelente experiencia, tanto en la tienda online como en nuestras redes sociales.</p>
                 <p>¡Gracias por ser parte de nuestra comunidad!</p>
             </div>
-        </div>
+        </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-dark text-white text-center p-4">
         <p>&copy; 2025 UrbanStyle | Todos los derechos reservados</p>
         <div class="social-icons">

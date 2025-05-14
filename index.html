@@ -8,7 +8,8 @@
 
     <!-- Estilos compilados desde Sass -->
     <link rel="stylesheet" href="css/estilos.css" />
-
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -18,19 +19,19 @@
 
 <body>
 
-    <!-- Header con menú hamburguesa -->
     <header class="bg-dark text-white p-3 sticky-top">
         <div class="container d-flex justify-content-between align-items-center">
             <h1 class="mb-0">UrbanStyle</h1>
 
-            <!-- Input para activar menú hamburguesa -->
-            <input type="checkbox" id="menu-toggle" class="d-none" />
-            <label for="menu-toggle" class="menu-icon d-lg-none" aria-label="Abrir menú de navegación">
+            <!-- Menú hamburguesa -->
+            <input type="checkbox" id="menu-toggle" class="d-none">
+            <label for="menu-toggle" class="menu-icon d-lg-none" aria-label="Abrir menú">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
+            <!-- Menú de navegación -->
             <nav class="nav-menu">
                 <ul class="nav flex-column flex-lg-row gap-2 gap-lg-0">
                     <li class="nav-item"><a class="nav-link text-white" href="./index.html">Inicio</a></li>
@@ -42,6 +43,7 @@
             </nav>
         </div>
     </header>
+
 
     <!-- Banner Principal -->
     <section class="hero py-5 text-center bg-light">
