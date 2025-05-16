@@ -1,8 +1,8 @@
 # 👟 UrbanStyle
 
-Proyecto final del curso **Desarrollo Web**.  
-Sitio web completo con diseño responsive, animaciones, menú hamburguesa sin JavaScript, SEO optimizado y accesibilidad aplicada.
-
+Proyecto final  **Desarrollo Web**.  
+Sitio web completo con diseño responsive, animaciones, menú hamburguesa, SEO optimizado y accesibilidad aplicada.
+✅ Sitio publicado en línea:
 🔗 **Deploy:** [Ver sitio en Netlify](https://frabjous-marshmallow-a42bfe.netlify.app/)
 
 ---
@@ -25,7 +25,7 @@ FAQ – Preguntas frecuentes en formato acordeón
 Contacto – Formulario de contacto y redes sociales
 
 🚀 Funcionalidades Clave
-✅ Menú hamburguesa sin JS
+✅ Menú hamburguesa 
 ✅ Diseño 100% responsive
 ✅ SEO básico aplicado (meta tags, etiquetas semánticas, alt en imágenes)
 ✅ Arquitectura SASS optimizada
